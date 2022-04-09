@@ -80,7 +80,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="section-partner" id="partner">
+      <div className="section-partner">
         <div className="container">
           <h2 className="heading-partner-in">Partner With</h2>
           <div className="logos">
