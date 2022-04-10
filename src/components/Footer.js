@@ -115,7 +115,7 @@ const Footer = () => {
           <ul className="footer-nav">
             <li>
               <a href="#" className="footer-link">
-                Recipe directory
+                AWE directory
               </a>
             </li>
             <li>
