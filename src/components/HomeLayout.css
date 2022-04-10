@@ -31,6 +31,7 @@ body {
   width: 100%;
   background-attachment: fixed;
   object-fit: cover;
+  position: relative;
 }
 /* header section */
 .header {
@@ -40,6 +41,15 @@ body {
   height: 8rem;
   background: rgba(255, 255, 255);
   padding: 4.8rem;
+  position: fixed;
+  /* position: relative; */
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  z-index: 999;
 }
 .logo {
   height: 13rem;
@@ -83,6 +93,8 @@ body {
   display: inline-block;
   text-align: center;
   background-color: #00000085;
+  position: absolute;
+  top: 12.6%;
 }
 .home-text-title {
   color: #fff;

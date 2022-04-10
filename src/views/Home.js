@@ -62,7 +62,7 @@ const Home = () => {
               <ion-icon
                 name="trophy-outline"
                 className="about-icon"
-                style={{ color: "#2b2e73" }}
+                style={{ color: "#cb3349" }}
               ></ion-icon>{" "}
               AWE Achievement
             </h2>

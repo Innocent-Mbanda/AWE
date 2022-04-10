@@ -19,7 +19,7 @@ body {
   color: #555;
 }
 .about-container {
-  padding: 9.6rem 4.8rem 0;
+  padding: 9.6rem 4.8rem;
 
   /* background: #fff; */
 }
@@ -32,16 +32,19 @@ span.about-icon {
 }
 .about-title {
   font-size: 3.8rem;
-  padding: 4.8rem 0 4.8rem 7.2rem;
+  /* padding: 4.8rem 0 4.8rem 7.2rem; */
   text-transform: uppercase;
+  padding-bottom: 4.8rem;
   color: #000;
+  padding-top: 4.8rem;
+  padding-left: 3.2rem;
 
   /* text-shadow: 0px 2px 2px #2b2e73; */
   font-weight: 700;
 }
 sup {
   display: inline-block;
-  color: #2b2e73;
+  color: #cb3349;
   font-size: 4.2rem;
 }
 .about span {
@@ -54,18 +57,19 @@ sup {
   height: 20rem;
   background: #cb3349;
   /* #2b2e73; */
-  left: 2.6%;
+  left: 0%;
   top: 0%;
   position: absolute;
 }
 .about-first-paragraph {
   font-size: 1.8rem;
-  padding: 0 3rem;
+  /* padding: 0 3rem; */
+
   color: #333;
   line-height: 1.5;
 }
 .other-part {
-  padding: 9.6rem 3.2rem;
+  padding: 9.6rem 3.2rem 0rem 3.2rem;
   display: grid;
   gap: 4.8rem;
   grid-template-columns: repeat(2, 1fr);
