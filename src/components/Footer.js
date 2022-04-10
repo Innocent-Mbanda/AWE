@@ -41,7 +41,7 @@ const Footer = () => {
             </li>
           </ul>
           <p className="copyright">
-            Copyright &copy;<span className="year">2022</span> by AWE-Rwanda,
+            Copyright &copy;<span className="year">2027</span> by AWE-Rwanda,
             Inc. All rights reserved
           </p>
         </div>
@@ -90,7 +90,7 @@ const Footer = () => {
           <ul className="footer-nav">
             <li>
               <a href="#" className="footer-link">
-                About Omnifood{" "}
+                About AWE{" "}
               </a>
             </li>
             <li>
@@ -100,7 +100,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="#" className="footer-link">
-                Cooking partners
+                partners
               </a>
             </li>
             <li>
