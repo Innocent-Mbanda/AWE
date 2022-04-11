@@ -6,6 +6,7 @@ import america from "../assets/img/america.png";
 import igire from "../assets/img/igire.png";
 import rwanda from "../assets/img/rwanda.svg";
 import noble from "../assets/img/noble.jpeg";
+import './queries.css';
 
 const Home = () => {
   return (

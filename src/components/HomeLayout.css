@@ -95,6 +95,33 @@ body {
   background-color: #00000085;
   position: absolute;
   top: 12.6%;
+  animation-name: box-home;
+  animation-duration: 0.3s;
+}
+
+/* responsive button */
+.menu-icon {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+}
+/* end responsive */
+@keyframes box-home {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  /* 50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  } */
+  100% {
+    opacity: 1;
+  }
 }
 .home-text-title {
   color: #fff;
@@ -104,6 +131,25 @@ body {
   letter-spacing: -1px;
 
   margin-bottom: 1.5rem;
+  animation: 2s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 .home-text-paragraph {
   color: #fff;
