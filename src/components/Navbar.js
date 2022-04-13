@@ -14,9 +14,12 @@ const Navbar = () => {
         <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
       <nav className="main-nav">
-        <ul className={click ? "main-nav-list active" : "main-nav-list"}>
+        <ul
+          className={click ? "main-nav-list active" : "main-nav-list"}
+          onClick={() => setClick(false)}
+        >
           <li>
-            <a href="#" className="main-nav-link" onclick={closeMobileMenu}>
+            <a href="#" className="main-nav-link">
               Home
             </a>
           </li>
