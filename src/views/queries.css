@@ -158,9 +158,9 @@
     cursor: pointer;
   }
   .about-title {
-    font-size: 3.2rem;
-    padding-top: 6rem;
-    padding-top: 6.2rem;
+    font-size: 4.8rem;
+    /* /* padding-top: 6rem; */
+    padding-top: 3.8rem;
 
     /* padding: 4.8rem 0 4.8rem 7.2rem; */
     /* text-transform: uppercase;
@@ -288,8 +288,8 @@
   }
   .about-title {
     /* background-color: #cb3349; */
-    font-size: 2.4rem;
-    padding-top: 3.2rem;
+    font-size: 2.8rem;
+    padding-top: 4rem;
 
     /* padding: 4.8rem 0 4.8rem 7.2rem; */
     /* text-transform: uppercase;
@@ -302,13 +302,13 @@
     font-weight: 700;
   }
   .about span {
-    font-size: 3.8rem;
+    font-size: 4.2rem;
   }
 
   .logos img {
     height: 4.4rem;
   }
   sup {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
