@@ -21,12 +21,20 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="main-nav-link" onclick={closeMobileMenu}>
+            <a
+              href="#about"
+              className="main-nav-link"
+              onclick={closeMobileMenu}
+            >
               About-US
             </a>
           </li>
           <li>
-            <a href="#" className="main-nav-link" onclick={closeMobileMenu}>
+            <a
+              href="#program"
+              className="main-nav-link"
+              onclick={closeMobileMenu}
+            >
               Program
             </a>
           </li>

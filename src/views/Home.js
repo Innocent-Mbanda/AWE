@@ -6,7 +6,7 @@ import america from "../assets/img/america.png";
 import igire from "../assets/img/igire.png";
 import rwanda from "../assets/img/rwanda.svg";
 import noble from "../assets/img/noble.jpeg";
-import './queries.css';
+import "./queries.css";
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
         <HomeLayout />
       </div>
 
-      <div className="about-container">
+      <div className="about-container" id="about">
         <div className="container">
           <div className="about">
             <h2 className="about-title">
@@ -92,7 +92,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="program-section">
+      <div className="program-section" id="program">
         <div className="container">
           <h2 className="program-title">our program</h2>
         </div>
