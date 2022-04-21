@@ -1,0 +1,180 @@
+/* 
+tiny:#d0475b
+shade:#cb3349
+#2b2e73;
+
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #555;
+}
+.bugesera-container,
+.kigali-container {
+  /* position: relative; */
+  background-color: #f1f1f1;
+  padding: 15rem 0 4rem 0;
+  /* height: 100vh; */
+}
+.heading-secondary {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #cb3349, #2b2e73);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.205);
+}
+.u-center-text {
+  text-align: center;
+}
+.row {
+  max-width: 114rem;
+  /* background-color: #eee; */
+  margin: 0 auto;
+  padding: 0 6rem;
+  gap: 1rem;
+  /* margin-left: 40%;
+  margin-right: 50%; */
+  /* transform: translate(-50%, -50%); */
+  display: grid;
+  grid-template-columns: 55% 45%;
+
+  width: 100%;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+/* .row .col-1 {
+  width: calc((100%-6rem) / 2);
+  margin-left: 6rem;
+} */
+
+.col-1:not(:last-child) {
+  margin-right: 2rem;
+}
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+.btn-text:link,
+.btn-text:visited {
+  color: #cb3349;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #cb3349;
+  padding: 1.2rem 2.4rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: inset 9px;
+}
+.btn-text:hover {
+  border-radius: 9px;
+  color: #fff;
+  transform: translateY(-2px);
+  border-bottom: inset 1px solid #cb3349;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to right, #cb3349, #2b2e73);
+  /* font-size: 1.6rem; */
+}
+.btn-text:active {
+  transform: translateY(0px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.composition {
+  position: relative;
+  /* margin-right: 8rem; */
+}
+.composition__photo {
+  width: 55%;
+  position: absolute;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 1rem;
+}
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+.composition__photo:hover {
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  transform: scale(1.05) translateY(-0.5rem);
+  z-index: 20;
+  outline: 1rem solid #2b2e73;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
+}
+
+/* contact-us form */
+.contact-container {
+  padding: 11rem 9.6rem 4.8rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(203, 51, 74, 0.97),
+    rgba(43, 45, 115, 0.97)
+  );
+}
+.contact {
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 50%
+    ),
+    url("../assets/img/graduator.JPG");
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.9);
+
+  background-position: top;
+  background-attachment: fixed;
+}
+.contact-form {
+  width: 50%;
+  padding: 4rem 6rem 4rem;
+}

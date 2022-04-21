@@ -1,12 +1,35 @@
 import React from "react";
+import ReactDOM from "react-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.min.css";
+import "swiper/components/effect-coverflow/effect-coverflow.min.css";
+import "swiper/components/pagination/pagination.min.css";
+import "swiper/components/navigation/navigation.min.css";
+import SwiperCore, {
+  Autoplay,
+  EffectCoverflow,
+  Pagination,
+  Navigation,
+} from "swiper/core";
+import FreeMode from "swiper";
 import HomeLayout from "../components/HomeLayout";
 import "./style.css";
 import Footer from "../components/Footer";
 import america from "../assets/img/america.png";
-import igire from "../assets/img/igire.png";
+import igire from "../assets/img/iro.jpg";
 import rwanda from "../assets/img/rwanda.svg";
 import noble from "../assets/img/noble.jpeg";
+import graduate from "../assets/img/graduate.JPG";
+import sitGraduate from "../assets/img/sitGraduate.JPG";
+import cake from "../assets/img/cake.JPG";
+import kigali from "../assets/img/kigali.jpg";
+import bugesera from "../assets/img/bugesera.jpeg";
 import "./queries.css";
+import About from "./about";
+import Program from "./program";
+import "./apply.css";
+
+SwiperCore.use([Autoplay, EffectCoverflow, Pagination, Navigation]);
 
 const Home = () => {
   return (
@@ -14,87 +37,68 @@ const Home = () => {
       <div className="home-container">
         <HomeLayout />
       </div>
-
-      <div className="about-container" id="about">
-        <div className="container">
-          <div className="about">
-            <h2 className="about-title">
-              About
-              <br />
-              <sup>
-                <ion-icon
-                  name="star-half-outline"
-                  className="about-icon"
-                ></ion-icon>
-              </sup>
-              <span>AWE &mdash; Rwanda </span>
-              <sup>
-                <ion-icon
-                  name="star-half-outline"
-                  className="about-icon"
-                ></ion-icon>
-              </sup>
-            </h2>
-            <p className="about-first-paragraph">
-              U.S. Embassy Kigali announces the opening of applications for the
-              2nd cohort of the Academy for Women Entrepreneurs (AWE) training
-              program, a Department of State initiative to support women
-              entrepreneurs globally. Through the academy, Rwanda women
-              entrepreneurs aged 18-35 will receive personalized business
-              mentorship, as well as professional knowledge, tools and networks,
-              in order to turn their ideas into successful businesses.
-            </p>
+      <About />
+      <div className="img-carousel">
+        {/* <div className="container">
+          <div className="title_wrapper">
+            <div className="reactLogo">
+              <img src={america} />
+            </div>
           </div>
-        </div>
-        <div className="other-part">
-          <div className="video-part">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/C09DUw_JNDo"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div className="title_">
+            <span>React</span>Swiper Slider
           </div>
-          <div className="video-right-part">
-            <h2 className="video-heading">
-              <ion-icon
-                name="trophy-outline"
-                className="about-icon"
-                style={{ color: "#cb3349" }}
-              ></ion-icon>{" "}
-              AWE Achievement
-            </h2>
-            <p className="video-paragraph">
-              The program will be carried out by the U.S. Embassy, in
-              partnership with Igire Rwanda Organization and Noble Women. AWE
-              uses DreamBuilder, an online training program on women’s
-              entrepreneurship developed through a partnership between Arizona
-              State University’s Thunderbird School of Management and
-              Freeport-McMoRan. The curriculum teaches women to create their own
-              business plans, understand how to raise capital, and connect with
-              networks of successful business owners.
-            </p>
-          </div>
-        </div>
+        </div> */}
+        <Swiper
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          navigation={true}
+          effect={"coverflow"}
+          centeredSlides={true}
+          slidesPerView={window.innerWidth < 768 ? 1 : "auto"}
+          loop={true}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src={cake} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={graduate} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={sitGraduate} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={kigali} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={bugesera} />
+          </SwiperSlide>
+        </Swiper>
       </div>
-
+      <Program />
       <div className="section-partner">
         <div className="container">
           <h2 className="heading-partner-in">Partner With</h2>
           <div className="logos">
             <img src={america} alt="america flag" />
-            <img src={igire} alt="igire flag" />
-            <img src={noble} alt="noble flag" />
             <img src={rwanda} alt="rwanda flag" />
+            <img src={noble} alt="noble flag" />
+            <img src={igire} alt="igire flag" />
           </div>
-        </div>
-      </div>
-      <div className="program-section" id="program">
-        <div className="container">
-          <h2 className="program-title">our program</h2>
         </div>
       </div>
       <Footer />

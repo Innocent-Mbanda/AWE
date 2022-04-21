@@ -95,8 +95,6 @@ body {
   background-color: #00000085;
   position: absolute;
   top: 12.6%;
-  animation-name: box-home;
-  animation-duration: 0.3s;
 }
 .mobile-menu-icon {
   display: none;
@@ -119,15 +117,6 @@ body {
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 0.5;
-  }
-  /* 50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.8;
-  } */
   100% {
     opacity: 1;
   }
@@ -146,14 +135,15 @@ body {
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
-    transform: translateY(80%);
+    transform: translateY(-80%);
   }
   20% {
     opacity: 0;
+    transform: translateY(-60%);
   }
   50% {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(-40%);
   }
   100% {
     opacity: 1;
@@ -167,6 +157,8 @@ body {
   width: 55%;
   text-align: center;
   display: inline-block;
+  animation-name: box-home;
+  animation-duration: 0.8s;
 }
 /* sticky navigation */
 .sticky {

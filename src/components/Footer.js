@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container grid grid--footer">
         <div className="logo-col">
-          <a href="#" className="footer-logo">
+          <a href="/" className="footer-logo">
             <img
               src={logo}
               alt="AWE logo"

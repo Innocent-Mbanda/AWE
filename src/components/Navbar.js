@@ -19,13 +19,13 @@ const Navbar = () => {
           onClick={() => setClick(false)}
         >
           <li>
-            <a href="#" className="main-nav-link">
+            <a href="/" className="main-nav-link">
               Home
             </a>
           </li>
           <li>
             <a
-              href="#about"
+              href="/about"
               className="main-nav-link"
               onclick={closeMobileMenu}
             >
@@ -34,7 +34,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#program"
+              href="/program"
               className="main-nav-link"
               onclick={closeMobileMenu}
             >
@@ -42,13 +42,17 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="main-nav-link" onclick={closeMobileMenu}>
+            <a
+              href="/contact-us"
+              className="main-nav-link"
+              onclick={closeMobileMenu}
+            >
               Contact-us
             </a>
           </li>
           <li>
             <a
-              href="#"
+              href="#apply"
               className="main-nav-link btn-apply-sm"
               onclick={closeMobileMenu}
             >
