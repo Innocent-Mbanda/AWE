@@ -25,7 +25,7 @@ const Contact = () => {
                     sx={{
                       display: "flex",
                       alignItems: "flex-end",
-                      // width: "50%",
+                      // width: "100%",
                     }}
                   >
                     <AccountCircle
