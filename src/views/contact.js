@@ -25,8 +25,9 @@ const Contact = () => {
                     sx={{
                       display: "flex",
                       alignItems: "flex-end",
-                      // width: "100%",
                     }}
+                    className="box-block"
+
                   >
                     <AccountCircle
                       sx={{ color: "action.active", mr: 1, my: 0.5 }}
@@ -102,6 +103,8 @@ const Contact = () => {
                   <a href="#" class="btn-text">
                     Apply Now &rarr;
                   </a>
+                  
+              
                 </div>
               </form>
             </div>

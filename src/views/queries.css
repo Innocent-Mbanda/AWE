@@ -269,11 +269,14 @@
     top: 11%;
     padding-top: 4rem;
   }
-
+  .contact-form {
+    padding: 4rem 2rem 4rem !important;
+  }
   .program-container {
     display: flex;
     flex-direction: column;
     gap: 4.8rem;
+    width: 100% !important;
   }
   .row {
     display: flex !important;
@@ -307,6 +310,7 @@
     padding: 1.5rem;
     width: 100%;
   }
+
   .heading-secondary {
     font-size: 3rem !important;
   }
@@ -374,6 +378,13 @@
     top: 10%;
     padding-top: 4rem;
   }
+  .contact-form {
+    padding: 4rem 2rem 4rem !important;
+  }
+
+  .row {
+    padding: 0 3rem !important;
+  }
 
   .about-container,
   .program-section {
@@ -397,6 +408,7 @@
     /* text-shadow: 0px 2px 2px #2b2e73; */
     font-weight: 700;
   }
+
   .about span,
   .program span {
     font-size: 4.2rem;
