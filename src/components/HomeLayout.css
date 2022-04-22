@@ -52,7 +52,7 @@ body {
   z-index: 999;
 }
 .logo {
-  height: 13rem;
+  height: 13rem !important;
   width: 25rem;
   /* background: grey; */
 }
