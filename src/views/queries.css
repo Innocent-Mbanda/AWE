@@ -1,6 +1,6 @@
 @media (min-width: 85em) {
   .home-text-box {
-    top: 8%;
+    top: 80px;
     padding-top: 4rem;
   }
   .home-text-title {
@@ -25,12 +25,12 @@
 /* BELOW 1344PX (Smaller desktop)*/
 /***********************************/
 @media (max-width: 84.9em) {
-  .home-text-box {
-    top: 9%;
-    padding-top: 4rem;
-  }
   .home-text-title {
     letter-spacing: 1px;
+  }
+  .home-text-box {
+    top: 80px;
+    padding-top: 4rem;
   }
   .home-text-paragraph {
     width: 60%;
@@ -53,6 +53,10 @@
   .other-part {
     gap: 2.2rem;
   }
+  .home-text-box {
+    top: 80px;
+    padding-top: 4rem;
+  }
   iframe {
     width: 460px;
   }
@@ -63,6 +67,10 @@
   .video-paragraph {
     width: 100%;
     font-size: 1.5rem;
+  }
+  .home-text-box {
+    top: 80px;
+    padding-top: 4rem;
   }
 }
 @media screen and (max-width: 67em) {
@@ -79,6 +87,10 @@
   .contact-form {
     width: 65% !important;
     padding: 4rem 6rem 4rem !important;
+  }
+  .home-text-box {
+    top: 80px;
+    padding-top: 4rem;
   }
 }
 @media screen and (max-width: 59em) {
@@ -100,7 +112,7 @@
     padding: 4rem 6rem 4rem !important;
   }
   .home-text-box {
-    top: 7%;
+    top: 80px;
     padding-top: 4rem;
   }
   .home-text-title {
@@ -266,7 +278,7 @@
 }
 @media (max-width: 58.9em) {
   .home-text-box {
-    top: 11%;
+    top: 90px;
     padding-top: 4rem;
   }
   .contact-form {
@@ -304,7 +316,7 @@
     transform: scale(1.1) !important;
   }
 }
-@media screen and (max-width: 44em) {
+@media screen and (max-width: 46em) {
   .home-text-paragraph {
     text-align: left;
     padding: 1.5rem;
@@ -313,6 +325,10 @@
 
   .heading-secondary {
     font-size: 3rem !important;
+  }
+  .home-text-box {
+    top: 90px;
+    padding-top: 4rem;
   }
 
   .home-text-title {
@@ -368,6 +384,10 @@
   .contact-container {
     padding: 11rem 2rem 4.8rem !important;
   }
+  .home-text-box {
+    top: 90px;
+    padding-top: 4rem;
+  }
 }
 
 @media (max-width: 34em) {
@@ -378,7 +398,7 @@
     font-size: 2.5rem !important;
   }
   .home-text-box {
-    top: 10%;
+    top: 90px;
     padding-top: 4rem;
   }
 
