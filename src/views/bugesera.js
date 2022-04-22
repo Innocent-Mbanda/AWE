@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import "./queries.css";
 import "./apply.css";
 import graduate from "../assets/img/graduate.JPG";
 import sitGraduate from "../assets/img/sitGraduate.JPG";

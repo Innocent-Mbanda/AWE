@@ -20,7 +20,7 @@ const Program = () => {
                   className="program-icon"
                 ></ion-icon>
               </sup>
-              <span>Program </span>
+              <span>AWE &mdash; Program </span>
               <sup>
                 <ion-icon
                   name="star-half-outline"
