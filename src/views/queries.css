@@ -19,6 +19,10 @@
     width: 100%;
     font-size: 1.7rem;
   }
+  .about-first-paragraph,
+  .program-first-paragraph {
+    margin-top: 2.5rem;
+  }
 }
 
 /***********************************/
@@ -315,6 +319,10 @@
     left: 0 !important;
     transform: scale(1.1) !important;
   }
+  .about-first-paragraph,
+  .program-first-paragraph {
+    margin-top: 3.5rem;
+  }
 }
 @media screen and (max-width: 46em) {
   .home-text-paragraph {
@@ -443,9 +451,5 @@
   }
   sup {
     font-size: 2rem;
-  }
-  .about-first-paragraph,
-  .program-first-paragraph {
-    margin-top: 2.5rem;
   }
 }
