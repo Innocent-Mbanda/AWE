@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
@@ -28,17 +28,27 @@ import "./queries.css";
 import About from "./about";
 import Program from "./program";
 import "./apply.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 SwiperCore.use([Autoplay, EffectCoverflow, Pagination, Navigation]);
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <div className="home-container">
         <HomeLayout />
       </div>
       <About />
-      <div className="img-carousel">
+      <div
+        className="img-carousel"
+        data-aos="zoom-in-up"
+        data-aos-duration="2000"
+      >
         {/* <div className="container">
           <div className="title_wrapper">
             <div className="reactLogo">
@@ -90,7 +100,11 @@ const Home = () => {
         </Swiper>
       </div>
       <Program />
-      <div className="section-partner">
+      <div
+        className="section-partner"
+        data-aos="zoom-in-right"
+        data-aos-duration="2000"
+      >
         <div className="container">
           <h2 className="heading-partner-in">Partner With</h2>
           <div className="logos">

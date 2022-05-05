@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/img/awef.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <footer className="footer">
+    <footer
+      className="footer"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <div className="container grid grid--footer">
         <div className="logo-col">
           <a href="/" className="footer-logo">
