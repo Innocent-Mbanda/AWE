@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="about-container" id="about">
+      <div className="about-container" id="about" data-Aos="fade-up">
         <div className="container">
           <div className="about">
-            <h2 className="about-title">
+            <h2
+              className="about-title"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
+            >
               About
               <br />
               <sup>
@@ -25,7 +36,14 @@ const About = () => {
                 ></ion-icon>
               </sup>
             </h2>
-            <p className="about-first-paragraph">
+            <p
+              className="about-first-paragraph"
+              data-aos="fade-up"
+              // data-aos-offset="200"
+              // data-aos-delay="50"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
+            >
               U.S. Embassy Kigali announces the opening of applications for the
               2nd cohort of the Academy for Women Entrepreneurs (AWE) training
               program, a Department of State initiative to support women
@@ -37,7 +55,12 @@ const About = () => {
           </div>
         </div>
         <div className="other-part">
-          <div className="video-part">
+          <div
+            className="video-part"
+            data-aos="fade-up-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <iframe
               width="560"
               height="315"
@@ -48,7 +71,12 @@ const About = () => {
               allowfullscreen
             ></iframe>
           </div>
-          <div className="video-right-part">
+          <div
+            className="video-right-part"
+            data-aos="fade-up-left"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
             <h2 className="video-heading">
               <ion-icon
                 name="trophy-outline"

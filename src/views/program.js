@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bugesera from "../assets/img/bugesera.jpeg";
 import kigali from "../assets/img/kigali.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Program = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Navbar />
       <div className="program-section" id="program">
         <div className="container">
           <div className="program">
-            <h2 className="program-title">
+            <h2
+              className="program-title"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
               About
               <br />
               <sup>
@@ -28,7 +38,11 @@ const Program = () => {
                 ></ion-icon>
               </sup>
             </h2>
-            <p className="program-first-paragraph">
+            <p
+              className="program-first-paragraph"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               U.S. Embassy Kigali announces the opening of applications for the
               2nd cohort of the Academy for Women Entrepreneurs (AWE) training
               program, a Department of State initiative to support women
@@ -39,7 +53,12 @@ const Program = () => {
             </p>
           </div>
           <div className="program-container" id="apply">
-            <div className="card">
+            <div
+              className="card"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <div className="card-img">
                 <img src={bugesera} alt="bugesera " className="program-img" />
                 <div className="program-title-position">
@@ -61,7 +80,12 @@ const Program = () => {
                 </div>
               </div>
             </div>
-            <div className="card">
+            <div
+              className="card"
+              data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <div className="card-img">
                 <img src={kigali} alt="kigali " className="program-img" />
                 <div className="program-title-position">

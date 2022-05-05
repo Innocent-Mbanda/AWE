@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import "./queries.css";
 import "./apply.css";
@@ -7,16 +7,32 @@ import sitGraduate from "../assets/img/sitGraduate.JPG";
 import cake from "../assets/img/cake.JPG";
 import women from "../assets/img/aweStudentBackgroundImg.jpg";
 import Footer from "../components/Footer";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Bugesera = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Navbar />
       <div className="bugesera-container">
-        <div className="u-center-text u-margin-bottom-big">
+        <div
+          className="u-center-text u-margin-bottom-big"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <h2 className="heading-secondary">Bugesera Application</h2>
         </div>
         <div className="row">
-          <div className="col-1">
+          <div
+            className="col-1"
+            data-aos="fade-up-right"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
             <h3 className="heading-tertiary u-margin-bottom-small">
               Academy Women Entrepreneur Bugesera
             </h3>
@@ -38,7 +54,12 @@ const Bugesera = () => {
               Apply Now &rarr;
             </a>
           </div>
-          <div className="col-2">
+          <div
+            className="col-2"
+            data-aos="fade-up-left"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
             <div className="composition">
               <img
                 src={cake}

@@ -1,20 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import women from "../assets/img/awes.JPG";
 import women1 from "../assets/img/aweStudent.JPG";
 import women2 from "../assets/img/graduate.JPG";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Kigali = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Navbar />
       <div className="kigali-container">
-        <div className="u-center-text u-margin-bottom-big">
+        <div
+          className="u-center-text u-margin-bottom-big"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <h2 className="heading-secondary">Kigali Application</h2>
         </div>
         <div className="row">
-          <div className="col-1">
+          <div
+            className="col-1"
+            data-aos="fade-up-right"
+            data-aos-duration="2000"
+          >
             <h3 className="heading-tertiary u-margin-bottom-small">
               Academy Women Entrepreneur Kigali
             </h3>
@@ -36,7 +49,12 @@ const Kigali = () => {
               Apply Now &rarr;
             </a>
           </div>
-          <div className="col-2">
+          <div
+            className="col-2"
+            data-aos="fade-up-left"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
             <div className="composition">
               <img
                 src={women1}
