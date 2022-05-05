@@ -5,7 +5,7 @@ import "./apply.css";
 import graduate from "../assets/img/graduate.JPG";
 import sitGraduate from "../assets/img/sitGraduate.JPG";
 import cake from "../assets/img/cake.JPG";
-import women from "../assets/img/women.jpeg";
+import women from "../assets/img/aweStudentBackgroundImg.jpg";
 import Footer from "../components/Footer";
 const Bugesera = () => {
   return (
@@ -46,12 +46,12 @@ const Bugesera = () => {
                 className="composition__photo composition__photo--p1"
               />
               <img
-                src={women}
+                src={sitGraduate}
                 alt="sit graduate student img"
                 className="composition__photo composition__photo--p2"
               />
               <img
-                src={sitGraduate}
+                src={women}
                 alt="cake graduate img"
                 className="composition__photo composition__photo--p3"
               />

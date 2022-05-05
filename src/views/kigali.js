@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import women from "../assets/img/wpmen.avif";
-import women1 from "../assets/img/women.jpg";
+import women from "../assets/img/awes.JPG";
+import women1 from "../assets/img/aweStudent.JPG";
 import women2 from "../assets/img/graduate.JPG";
 
 const Kigali = () => {
