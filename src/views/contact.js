@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import TextField from "@mui/material/TextField";
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Navbar />
       <div className="contact-container">
         <div className="raws">
-          <div className="contact">
+          <div
+            className="contact"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <div className="contact-form">
               <form action="" className="form">
                 <div className="u-center-text u-margin-bottom-small">
@@ -27,7 +37,6 @@ const Contact = () => {
                       alignItems: "flex-end",
                     }}
                     className="box-block"
-
                   >
                     <AccountCircle
                       sx={{ color: "action.active", mr: 1, my: 0.5 }}
@@ -103,8 +112,6 @@ const Contact = () => {
                   <a href="#" class="btn-text">
                     Apply Now &rarr;
                   </a>
-                  
-              
                 </div>
               </form>
             </div>

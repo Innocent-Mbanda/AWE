@@ -29,7 +29,7 @@ const Bugesera = () => {
         <div className="row">
           <div
             className="col-1"
-            data-aos="fade-up-right"
+            data-aos="fade-right"
             data-aos-easing="linear"
             data-aos-duration="2000"
           >
@@ -56,7 +56,7 @@ const Bugesera = () => {
           </div>
           <div
             className="col-2"
-            data-aos="fade-up-left"
+            data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="2000"
           >

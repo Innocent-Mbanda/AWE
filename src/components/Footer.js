@@ -11,9 +11,9 @@ const Footer = () => {
   return (
     <footer
       className="footer"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-duration="1000"
+      // data-aos="fade-left"
+      // data-aos-easing="linear"
+      // data-aos-duration="1000"
     >
       <div className="container grid grid--footer">
         <div className="logo-col">

@@ -23,11 +23,7 @@ const Kigali = () => {
           <h2 className="heading-secondary">Kigali Application</h2>
         </div>
         <div className="row">
-          <div
-            className="col-1"
-            data-aos="fade-up-right"
-            data-aos-duration="2000"
-          >
+          <div className="col-1" data-aos="fade-right" data-aos-duration="2000">
             <h3 className="heading-tertiary u-margin-bottom-small">
               Academy Women Entrepreneur Kigali
             </h3>
@@ -51,7 +47,7 @@ const Kigali = () => {
           </div>
           <div
             className="col-2"
-            data-aos="fade-up-left"
+            data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="2000"
           >

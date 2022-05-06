@@ -25,8 +25,8 @@ import cake from "../assets/img/cake.JPG";
 import kigali from "../assets/img/kigali.jpg";
 import bugesera from "../assets/img/bugesera.jpeg";
 import "./queries.css";
-import About from "./about";
-import Program from "./program";
+import About from "../components/about";
+import Program from "../components/program";
 import "./apply.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -102,8 +102,8 @@ const Home = () => {
       <Program />
       <div
         className="section-partner"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
+        data-aos="flip-up"
+        data-aos-duration="2000"
       >
         <div className="container">
           <h2 className="heading-partner-in">Partner With</h2>
