@@ -18,7 +18,7 @@ import Footer from "../components/Footer";
 import america from "../assets/img/america.png";
 import igire from "../assets/img/iro.jpg";
 import rwanda from "../assets/img/rwanda.svg";
-import noble from "../assets/img/noble.jpeg";
+import noble from "../assets/img/noble.jpg";
 import graduate from "../assets/img/graduate.JPG";
 import sitGraduate from "../assets/img/sitGraduate.JPG";
 import cake from "../assets/img/cake.JPG";
@@ -102,8 +102,8 @@ const Home = () => {
       <Program />
       <div
         className="section-partner"
-        data-aos="zoom-in-right"
-        data-aos-duration="2000"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
       >
         <div className="container">
           <h2 className="heading-partner-in">Partner With</h2>
