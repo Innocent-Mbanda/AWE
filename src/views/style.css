@@ -141,7 +141,7 @@ sup {
   transition: all 0.4s;
 }
 .card:hover {
-  transform: translateY(-1.2rem);
+  transform: translate(5px, -5px);
   cursor: pointer;
 }
 .card-img {
@@ -163,6 +163,7 @@ sup {
   padding: 1.5rem 0;
   text-align: center;
   background: rgba(0, 0, 0, 0.466);
+  transition: all 0.3s;
 }
 
 /* program */

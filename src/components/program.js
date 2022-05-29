@@ -43,13 +43,30 @@ const Program = () => {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              U.S. Embassy Kigali announces the opening of applications for the
-              2nd cohort of the Academy for Women Entrepreneurs (AWE) training
-              program, a Department of State initiative to support women
-              entrepreneurs globally. Through the academy, Rwanda women
-              entrepreneurs aged 18-35 will receive personalized business
-              mentorship, as well as professional knowledge, tools and networks,
-              in order to turn their ideas into successful businesses.
+              The Academy for Women Entrepreneurs program was created to provide
+              women with the knowledge, networks, and access they need to start
+              and grow successful businesses. The AWE program is a flexible
+              educational opportunity that combines the online platform
+              DreamBuilder with locally provided content, mentoring, and
+              facilitation. Through DreamBuilder, a cohort of women learn core
+              business skills such as strategic planning, marketing and finance,
+              and then discuss the material with local facilitators and business
+              partners.{" "}
+            </p>
+
+            <p
+              className="program-first-paragraph"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              The program seeks to promote women’s social and economic
+              empowerment, by teaching enterprising women how to launch and
+              scale their businesses. AWE reinforces peer-to-peer learning,
+              networking, and cohesion among the graduating classes of women
+              entrepreneurs, while also demonstrating local business growth. AWE
+              Rwanda has proven to be customized, impactful and a lifetime
+              opportunity for our Kigali and Bugesera graduates. We look forward
+              to reaching out to other participants from other parts of Rwanda.
             </p>
           </div>
           <div className="program-container" id="apply">
