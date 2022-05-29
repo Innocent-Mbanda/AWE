@@ -54,6 +54,9 @@ body {
 .logo {
   height: 13rem !important;
   width: 25rem;
+  /* padding: 2rem 0rem; */
+
+  /* object-fit: contain; */
 
   /* background: grey; */
 }
