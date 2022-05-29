@@ -104,6 +104,7 @@ const Home = () => {
         className="section-partner"
         data-aos="flip-up"
         data-aos-duration="2000"
+        id="partner"
       >
         <div className="container">
           <h2 className="heading-partner-in">Partner With</h2>

@@ -8,6 +8,10 @@ const Footer = () => {
     AOS.init();
     AOS.refresh();
   }, []);
+
+  const current = new Date();
+  const date = current.getFullYear();
+
   return (
     <footer
       className="footer"
@@ -52,7 +56,7 @@ const Footer = () => {
             </li>
           </ul>
           <p className="copyright">
-            Copyright &copy;<span className="year">2027</span> by AWE-Rwanda,
+            Copyright &copy;<span className="year">{date}</span> by AWE-Rwanda,
             Inc. All rights reserved
           </p>
         </div>
@@ -61,12 +65,12 @@ const Footer = () => {
           <address className="contacts">
             <p className="address">623 Kacyiru St., 2nd Floor, Kigali Rwanda</p>
             <p>
-              <a className="footer-link" href="tel:078-562-7690">
-                078-562-7690
+              <a className="footer-link" href="tel:+250-788-737-287">
+                +250-788-737-287
               </a>
               <br />
-              <a className="footer-link" href="mailto:hello@awerwanda.com">
-                hello@awe-rwanda.com
+              <a className="footer-link" href="mailto:awerwanda@gmail.com">
+                awerwanda@gmail.com
               </a>
             </p>
           </address>
@@ -86,12 +90,12 @@ const Footer = () => {
             </li>
             <li>
               <a href="#" className="footer-link">
-                iOS app
+                {/* iOS app */}
               </a>
             </li>
             <li>
               <a href="#" className="footer-link">
-                Android app
+                {/* Android app */}
               </a>
             </li>
           </ul>
@@ -100,7 +104,7 @@ const Footer = () => {
           <p className="footer-heading">Company</p>
           <ul className="footer-nav">
             <li>
-              <a href="#" className="footer-link">
+              <a href="/about" className="footer-link">
                 About AWE{" "}
               </a>
             </li>
@@ -110,12 +114,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="footer-link">
+              <a href="#partner" className="footer-link">
                 partners
               </a>
             </li>
             <li>
-              <a href="#" className="footer-link">
+              <a href="/program" className="footer-link">
                 Careers
               </a>
             </li>
