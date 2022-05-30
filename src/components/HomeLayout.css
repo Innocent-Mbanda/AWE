@@ -60,6 +60,10 @@ body {
 
   /* background: grey; */
 }
+.logo-footer {
+  height: 13rem !important;
+  width: 25rem;
+}
 /* Navigation */
 .main-nav-list {
   list-style-type: none;
