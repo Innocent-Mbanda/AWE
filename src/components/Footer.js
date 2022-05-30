@@ -47,7 +47,11 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="footer-link">
+              <a
+                href="https://twitter.com/AWERwanda
+              "
+                className="footer-link"
+              >
                 <ion-icon
                   name="logo-twitter"
                   className="social-icon"
