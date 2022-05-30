@@ -356,10 +356,10 @@
   .address-col {
     grid-column: span 3;
   }
-  .logo {
+  /* .logo {
     width: 100% !important;
     object-fit: cover !important;
-  }
+  } */
   .nav-col {
     grid-row: 1;
     grid-column: span 2;
