@@ -26,7 +26,7 @@ const Footer = () => {
               src={logo}
               alt="AWE logo"
               style={{ objectFit: "cover" }}
-              className="logo"
+              className="logo-footer"
             />
           </a>
           <ul className="social-links">
