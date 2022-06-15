@@ -135,9 +135,9 @@ body {
   text-transform: uppercase;
   font-size: 3.2rem;
   letter-spacing: -1px;
-
+  backface-visibility: hidden;
   margin-bottom: 1.5rem;
-  animation: 2s anim-lineUp ease-out;
+  animation: anim-lineUp 3s ease-out;
 }
 
 @keyframes anim-lineUp {
@@ -145,13 +145,10 @@ body {
     opacity: 0;
     transform: translateY(-80%);
   }
-  20% {
-    opacity: 0;
-    transform: translateY(-60%);
-  }
-  50% {
+
+  80% {
     opacity: 1;
-    transform: translateY(-40%);
+    transform: translateY(20%);
   }
   100% {
     opacity: 1;
